@@ -5,7 +5,8 @@ function ResultsContainer(props) {
     if(props.path === "/") {
         return(
             <div id="resultsContainer">
-                <h3>Results Found</h3>
+                <h2>Results Found</h2>
+                <br></br>
                 {props.bookData.map((book) => {
                     const bookInfo = book.volumeInfo;
                     return <BookResult

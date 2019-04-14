@@ -5,7 +5,6 @@ import {Link} from "react-router-dom";
 const headerStyle = {
   "backgroundImage": `url(${heroImage})`,
   "backgroundSize": "cover",
-  "borderBottom": "1vw solid black",
   position: "relative"
 }
 

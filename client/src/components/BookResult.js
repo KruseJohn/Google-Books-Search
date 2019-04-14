@@ -60,11 +60,11 @@ class BookResult extends React.Component {
                     <div className="btnDiv">
                         {
                             // if link to book exists include View button else do not
-                            (this.props.link)? <a href={this.props.link} target="_blank" rel="noopener noreferrer"><button type="button" name="view">View</button></a> : null
+                            (this.props.link)? <a href={this.props.link} target="_blank" rel="noopener noreferrer"><button type="button" id="view" name="view">View</button></a> : null
                         }
                         {
                             // if this.props.path is "/" display save button else display Delete button
-                            (this.props.path === "/")? <button type="button" name="save" onClick={this.handleSaveClick} disabled={this.state.saved}>{(this.state.saved)? "Saved" : "Save"}</button> : <button type="button" name="Delete" onClick={this.handleDeleteClick} disabled={this.state.deleted}>Delete</button>
+                            (this.props.path === "/")? <button type="button" id="save" name="save" onClick={this.handleSaveClick} disabled={this.state.saved}>{(this.state.saved)? "Saved" : "Save"}</button> : <button type="button" id="delete" name="Delete" onClick={this.handleDeleteClick} disabled={this.state.deleted}>Delete</button>
                         }
                     </div>
                 </div>
