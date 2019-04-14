@@ -1,19 +1,23 @@
 import React from "react";
 import heroImage from "../images/book.jpg";
+import {Link} from "react-router-dom";
 
 const headerStyle = {
   "backgroundImage": `url(${heroImage})`,
-  "maxWidth": "100vw",
-  height: "calc(100vw * .43333)",
   "backgroundSize": "cover",
+  "borderBottom": "1vw solid black",
   position: "relative"
 }
 
 function Header() {
     return (
         <header style={headerStyle}>
-            <h1>(React) Google Books Search</h1>
-            <p>Search for and Save Books of Interest</p>
+        <nav>
+            <Link to="/">Search </Link>
+            <Link to="/saved"> Saved</Link>
+        </nav>
+            <h1>Google Books</h1>
+            <p>Search and Save Books of Interest</p>
         </header>
     );
 }
