@@ -67,6 +67,7 @@ h6 {
   background-color: #fadf85;
   padding: 1vw 3vw 2vw 3vw;
   margin: 1vw 2vw;
+  border: 2px solid black;
 }
 
 form {
@@ -82,12 +83,13 @@ input {
 }
 
 button {
-  border-radius: 0;
+  border-radius: 5px;
   border: none;
   background-color: #f9c411;
   color: black;
   padding: .3vw .6vw;
   font-size: 1.3vw;
+  border: 1px solid black;
 }
 
 form button {
@@ -100,10 +102,12 @@ button[disabled] {
 }
 
 .bookResult {
-  background-color: white;
+  background-color: #dadada;
   color: black;
   padding: 1vw 3vw 2vw 3vw;
   font-size: 1.3vw;
+  border: 1px solid black;
+  box-shadow: 5px 8px 18px #888888;
 }
 
 .bookResult:not(:last-of-type) {
@@ -125,6 +129,8 @@ button[disabled] {
   max-width: 10vw;
   max-height: auto;
   margin-right: 2vw;
+  border: 1px solid black;
+  box-shadow: 4px 4px #888888;
 }
 
 .aboutBook {
