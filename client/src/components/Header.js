@@ -1,9 +1,9 @@
 import React from "react";
-import heroImage from "../images/book.jpg";
+import bookImage from "../images/book.jpg";
 import {Link} from "react-router-dom";
 
 const headerStyle = {
-  "backgroundImage": `url(${heroImage})`,
+  "backgroundImage": `url(${bookImage})`,
   "backgroundSize": "cover",
   position: "relative"
 }
